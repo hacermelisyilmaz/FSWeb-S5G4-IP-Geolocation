@@ -28,13 +28,18 @@ async function ipAdresimiAl() {
 	ADIM 5'e gelene kadar fonksiyonunuzu test etmek için ip nizi URL'ye manuel olarak ekleyebilirsiniz.
 */
 
-axios.get("https://apis.ergineer.com/ipgeoapi/78.180.63.248");
+axios
+  .get("https://apis.ergineer.com/ipgeoapi/78.180.63.248")
 
-/*
+  /*
 	ADIM 2: Geri döndürülen verileri inceleyin, bu sizin ip bilgileriniz! Bileşen fonksiyonunuzu geliştirmek içindeki bu veri yapısını
 	iyice anlamanız gerekmektedir.
 	
 */
+
+  .then((response) => {
+    console.log(response);
+  });
 
 /*
 	ADIM 3: Argümanı sadece 1 nesne kabül eden bir fonksiyon oluşturun.
