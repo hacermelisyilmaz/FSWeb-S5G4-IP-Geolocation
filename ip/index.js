@@ -105,6 +105,8 @@ function createCard(data) {
   );
 
   cardDiv.append(bayrakImg, infoDiv);
+
+  return cardDiv;
 }
 
 /*
