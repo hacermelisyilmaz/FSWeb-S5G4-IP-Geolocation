@@ -101,6 +101,8 @@ function createCard(data) {
     paraBirimiDiv,
     ispDiv
   );
+
+  cardDiv.append(bayrakImg, infoDiv);
 }
 
 /*
