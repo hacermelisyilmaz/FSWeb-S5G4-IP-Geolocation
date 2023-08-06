@@ -77,8 +77,11 @@ function createCard(data) {
   ulkeP.className = "ulke";
   ulkeP.textContent = `${data["ülke"]} (${data["ülkeKodu"]})`;
 
-  const enlemDiv = document.createElement("div");
-  enlemDiv.textContent = `Enlem: ${data.enlem} Boylam: ${data.boylam}`;
+  const enlemBoylamDiv = document.createElement("div");
+  enlemBoylamDiv.textContent = `Enlem: ${data.enlem} Boylam: ${data.boylam}`;
+
+  const sehirDiv = document.createElement("div");
+  sehirDiv.textContent = data["şehir"];
 }
 
 /*
