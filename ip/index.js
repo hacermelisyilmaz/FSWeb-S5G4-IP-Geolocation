@@ -46,18 +46,23 @@ axios
     DOM metotlarını ve özelliklerini kullanarak, şunları gerçekleştirin:
 	NOT: API'den gelen bayrak url'i çalışmazsa alternatif olarak: https://flagsapi.com/
 	<div class="card">
-	<img src={ülke bayrağı url} />
-	<div class="card-info">
-		<h3 class="ip">{ip adresi}</h3>
-		<p class="ulke">{ülke bilgisi (ülke kodu)}</p>
-		<p>Enlem: {enlem} Boylam: {boylam}</p>
-		<p>Şehir: {şehir}</p>
-		<p>Saat dilimi: {saat dilimi}</p>
-		<p>Para birimi: {para birimi}</p>
-		<p>ISP: {isp}</p>
-	</div>
+		<img src={ülke bayrağı url} />
+		<div class="card-info">
+			<h3 class="ip">{ip adresi}</h3>
+			<p class="ulke">{ülke bilgisi (ülke kodu)}</p>
+			<p>Enlem: {enlem} Boylam: {boylam}</p>
+			<p>Şehir: {şehir}</p>
+			<p>Saat dilimi: {saat dilimi}</p>
+			<p>Para birimi: {para birimi}</p>
+			<p>ISP: {isp}</p>
+		</div>
     </div>
 */
+
+function createCard(data) {
+  const cardDiv = document.createElement("div");
+  cardDiv.className = "card";
+}
 
 /*
 	ADIM 4: API'den alınan verileri kullanarak ADIM 3'te verilen yapıda bir kart oluşturun ve 
