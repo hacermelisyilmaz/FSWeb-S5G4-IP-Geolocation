@@ -40,6 +40,7 @@ axios
 
   .then((response) => {
     const card1 = createCard(response.data);
+    cardsDOM.append(card1);
   });
 
 /*
