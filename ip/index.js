@@ -88,6 +88,9 @@ function createCard(data) {
 
   const paraBirimiDiv = document.createElement("div");
   paraBirimiDiv.textContent = data.parabirimi;
+
+  const ispDiv = document.createElement("div");
+  ispDiv.textContent = data.isp;
 }
 
 /*
