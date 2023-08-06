@@ -65,6 +65,9 @@ function createCard(data) {
 
   const bayrakImg = document.createElement("img");
   bayrakImg.src = data["ülkebayrağı"];
+
+  const infoDiv = document.createElement("div");
+  infoDiv.className = "card-info";
 }
 
 /*
