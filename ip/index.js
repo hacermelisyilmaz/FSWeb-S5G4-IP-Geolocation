@@ -110,6 +110,8 @@ function createCard(data) {
 	bu kartı DOM olarak .cards elementinin içine ekleyin. 
 */
 
+const cardsDOM = document.getElementsByClassName("cards")[0];
+
 /*
 	ADIM 5: Manuel olarak eklediğiniz IP adresini dinamiğe dönüştürün. 
 	Sayfanın en üstünde ---değiştirmeyin--- etiketleri arasında yer alan asenkron ipAdresimiAl() fonksiyonuna 
