@@ -82,6 +82,9 @@ function createCard(data) {
 
   const sehirDiv = document.createElement("div");
   sehirDiv.textContent = data["şehir"];
+
+  const saatDilimiDiv = document.createElement("div");
+  saatDilimiDiv.textContent = data.saatdilimi;
 }
 
 /*
