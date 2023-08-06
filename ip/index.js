@@ -62,6 +62,9 @@ axios
 function createCard(data) {
   const cardDiv = document.createElement("div");
   cardDiv.className = "card";
+
+  const bayrakImg = document.createElement("img");
+  bayrakImg.src = data["ülkebayrağı"];
 }
 
 /*
