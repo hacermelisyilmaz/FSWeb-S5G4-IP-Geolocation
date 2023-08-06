@@ -27,6 +27,7 @@ async function ipAdresimiAl() {
 	NOT: Bilgisayarın IP adresini öğrenmek için: https://apis.ergineer.com/ipadresim 
 	ADIM 5'e gelene kadar fonksiyonunuzu test etmek için ip nizi URL'ye manuel olarak ekleyebilirsiniz.
 */
+const cardsDOM = document.getElementsByClassName("cards")[0];
 
 axios
   .get("https://apis.ergineer.com/ipgeoapi/78.180.63.248")
@@ -38,7 +39,7 @@ axios
 */
 
   .then((response) => {
-    console.log(response.data);
+    const card1 = createCard(response.data);
   });
 
 /*
@@ -109,8 +110,6 @@ function createCard(data) {
 	ADIM 4: API'den alınan verileri kullanarak ADIM 3'te verilen yapıda bir kart oluşturun ve 
 	bu kartı DOM olarak .cards elementinin içine ekleyin. 
 */
-
-const cardsDOM = document.getElementsByClassName("cards")[0];
 
 /*
 	ADIM 5: Manuel olarak eklediğiniz IP adresini dinamiğe dönüştürün. 
