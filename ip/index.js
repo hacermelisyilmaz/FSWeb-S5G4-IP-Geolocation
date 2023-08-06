@@ -68,6 +68,10 @@ function createCard(data) {
 
   const infoDiv = document.createElement("div");
   infoDiv.className = "card-info";
+
+  const ipH3 = document.createElement("h3");
+  ipH3.className = "ip";
+  ipH3.textContent = data.sorgu;
 }
 
 /*
