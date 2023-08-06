@@ -76,6 +76,9 @@ function createCard(data) {
   const ulkeP = document.createElement("p");
   ulkeP.className = "ulke";
   ulkeP.textContent = `${data["ülke"]} (${data["ülkeKodu"]})`;
+
+  const enlemDiv = document.createElement("div");
+  enlemDiv.textContent = `Enlem: ${data.enlem} Boylam: ${data.boylam}`;
 }
 
 /*
