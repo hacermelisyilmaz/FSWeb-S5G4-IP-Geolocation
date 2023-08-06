@@ -19,6 +19,18 @@ async function ipAdresimiAl() {
 }
 // ------------ değiştirmeyin --------------
 
+async function geoAPI() {
+  await ipAdresimiAl();
+  axios
+    .get(`https://apis.ergineer.com/ipgeoapi/${benimIP}`)
+    .then((response) => {
+      console.log(response);
+      const card1 = createCard(response.data);
+      cardsDOM.append(card1);
+    });
+}
+geoAPI();
+
 /*
 	ADIM 1: axios kullanarak, aşağıdaki URL'ye GET sorgusu atacağız
     (tag içindeki yere kendi ipnizi yazarak URL'yi oluşturun):
@@ -29,19 +41,11 @@ async function ipAdresimiAl() {
 */
 const cardsDOM = document.getElementsByClassName("cards")[0];
 
-axios
-  .get("https://apis.ergineer.com/ipgeoapi/78.180.63.248")
-
-  /*
+/*
 	ADIM 2: Geri döndürülen verileri inceleyin, bu sizin ip bilgileriniz! Bileşen fonksiyonunuzu geliştirmek içindeki bu veri yapısını
 	iyice anlamanız gerekmektedir.
 	
 */
-
-  .then((response) => {
-    const card1 = createCard(response.data);
-    cardsDOM.append(card1);
-  });
 
 /*
 	ADIM 3: Argümanı sadece 1 nesne kabül eden bir fonksiyon oluşturun.
