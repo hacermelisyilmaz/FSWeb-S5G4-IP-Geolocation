@@ -66,7 +66,7 @@ function createCard(data) {
   cardDiv.className = "card";
 
   const bayrakImg = document.createElement("img");
-  bayrakImg.src = data["ülkebayrağı"];
+  bayrakImg.src = "https://flagsapi.com/TR/flat/64.png";
 
   const infoDiv = document.createElement("div");
   infoDiv.className = "card-info";
