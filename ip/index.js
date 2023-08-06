@@ -91,6 +91,16 @@ function createCard(data) {
 
   const ispDiv = document.createElement("div");
   ispDiv.textContent = data.isp;
+
+  infoDiv.append(
+    ipH3,
+    ulkeP,
+    enlemBoylamDiv,
+    sehirDiv,
+    saatDilimiDiv,
+    paraBirimiDiv,
+    ispDiv
+  );
 }
 
 /*
